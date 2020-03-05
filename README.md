@@ -1,4 +1,4 @@
-# DiffarableSamples
+# DiffableSamples
 
 This repo is show you samples of differential update library.
 
