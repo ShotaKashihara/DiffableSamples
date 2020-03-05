@@ -15,6 +15,12 @@
 		EF5A0E982410A42100026D09 /* DifferenceKitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */; };
 		EF5A0E9A2410A65700026D09 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E992410A65700026D09 /* Sample.swift */; };
 		EF5A0E9C2410AA1100026D09 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E9B2410AA1100026D09 /* TableViewController.swift */; };
+		EF5A0EA52410BFED00026D09 /* RxDataSourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0EA42410BFED00026D09 /* RxDataSourcesViewController.swift */; };
+		EF5A0EA72410C71700026D09 /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0EA62410C71700026D09 /* DataSources.swift */; };
+		EF5A0EA92410CD7000026D09 /* IGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0EA82410CD7000026D09 /* IGListKit.swift */; };
+		EF5A0EAC2410D0E700026D09 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0EAB2410D0E700026D09 /* ListViewController.swift */; };
+		EF5A0EAE2410D0FF00026D09 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0EAD2410D0FF00026D09 /* ListCell.swift */; };
+		EF5A0EB02410D5BC00026D09 /* UITableViewDiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0EAF2410D5BC00026D09 /* UITableViewDiffableDataSourceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceKitTableViewController.swift; sourceTree = "<group>"; };
 		EF5A0E992410A65700026D09 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		EF5A0E9B2410AA1100026D09 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EF5A0EA42410BFED00026D09 /* RxDataSourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourcesViewController.swift; sourceTree = "<group>"; };
+		EF5A0EA62410C71700026D09 /* DataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
+		EF5A0EA82410CD7000026D09 /* IGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListKit.swift; sourceTree = "<group>"; };
+		EF5A0EAB2410D0E700026D09 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EF5A0EAD2410D0FF00026D09 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		EF5A0EAF2410D5BC00026D09 /* UITableViewDiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDiffableDataSourceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				EF5A0E992410A65700026D09 /* Sample.swift */,
+				EF5A0EA62410C71700026D09 /* DataSources.swift */,
 				EF5A0E922410A3B600026D09 /* DifferenceKit */,
-				EF5A0E932410A3C000026D09 /* RxDataSources */,
+				EF5A0EA32410ABE700026D09 /* RxDataSources */,
 				EF5A0E942410A3D100026D09 /* IGListKit */,
 				EF5A0E952410A3D800026D09 /* DeepDiff */,
+				EF5A0EAA2410D0B700026D09 /* Apple way on iOS 13 */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -122,16 +136,10 @@
 			path = DifferenceKit;
 			sourceTree = "<group>";
 		};
-		EF5A0E932410A3C000026D09 /* RxDataSources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RxDataSources;
-			sourceTree = "<group>";
-		};
 		EF5A0E942410A3D100026D09 /* IGListKit */ = {
 			isa = PBXGroup;
 			children = (
+				EF5A0EA82410CD7000026D09 /* IGListKit.swift */,
 			);
 			path = IGListKit;
 			sourceTree = "<group>";
@@ -148,6 +156,24 @@
 			children = (
 			);
 			path = SampleDataSource;
+			sourceTree = "<group>";
+		};
+		EF5A0EA32410ABE700026D09 /* RxDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A0EA42410BFED00026D09 /* RxDataSourcesViewController.swift */,
+			);
+			path = RxDataSources;
+			sourceTree = "<group>";
+		};
+		EF5A0EAA2410D0B700026D09 /* Apple way on iOS 13 */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A0EAB2410D0E700026D09 /* ListViewController.swift */,
+				EF5A0EAD2410D0FF00026D09 /* ListCell.swift */,
+				EF5A0EAF2410D5BC00026D09 /* UITableViewDiffableDataSourceViewController.swift */,
+			);
+			path = "Apple way on iOS 13";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5A0E982410A42100026D09 /* DifferenceKitTableViewController.swift in Sources */,
+				EF5A0EB02410D5BC00026D09 /* UITableViewDiffableDataSourceViewController.swift in Sources */,
 				EF5A0E9A2410A65700026D09 /* Sample.swift in Sources */,
 				EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */,
+				EF5A0EAE2410D0FF00026D09 /* ListCell.swift in Sources */,
 				EF5A0E9C2410AA1100026D09 /* TableViewController.swift in Sources */,
+				EF5A0EA72410C71700026D09 /* DataSources.swift in Sources */,
+				EF5A0EAC2410D0E700026D09 /* ListViewController.swift in Sources */,
 				EF5A0E7B24109EAE00026D09 /* AppDelegate.swift in Sources */,
+				EF5A0EA92410CD7000026D09 /* IGListKit.swift in Sources */,
+				EF5A0EA52410BFED00026D09 /* RxDataSourcesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

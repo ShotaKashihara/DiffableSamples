@@ -1,25 +1,7 @@
 import DifferenceKit
 
-extension String: Differentiable {}
-
-fileprivate enum Const {
-    static let source = [
-        ArraySection(model: "Section 1", elements: ["A", "B", "C"]),
-        ArraySection(model: "Section 2", elements: ["D", "E", "F"]),
-        ArraySection(model: "Section 3", elements: ["G", "H", "I"]),
-        ArraySection(model: "Section 4", elements: ["J", "K", "L"])
-    ]
-
-    static let target = [
-        ArraySection(model: "Section 5", elements: ["M", "N", "O"]),
-        ArraySection(model: "Section 1", elements: ["A", "C"]),
-        ArraySection(model: "Section 4", elements: ["J", "I", "K", "L"]),
-        ArraySection(model: "Section 3", elements: ["G", "H", "Z"]),
-        ArraySection(model: "Section 6", elements: ["P", "Q", "R"])
-    ]
-}
-
 final class DifferenceKitTableViewController: TableViewController {
+    private var data = [ArraySection<String, String>]()
     public var dataInput: [ArraySection<String, String>] {
         get { return data }
         set {
@@ -29,13 +11,12 @@ final class DifferenceKitTableViewController: TableViewController {
             }
         }
     }
-    private var data = [ArraySection<String, String>]()
 
     override func viewDidLoad() {
-        dataInput = Const.source
+        dataInput = DifferenceKit.source
 
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] timer in
-            self?.dataInput = Const.target
+            self?.dataInput = DifferenceKit.target
         }
     }
 }
