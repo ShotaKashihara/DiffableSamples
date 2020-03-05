@@ -63,41 +63,40 @@ extension MySection : AnimatableSectionModelType {
 /// MARK: - Apple
 
 enum Apple {
-    static let source = [
-        AppleSection(section: "Section 1", items: ["A", "B", "C"]),
-        AppleSection(section: "Section 2", items: ["D", "E", "F"]),
-        AppleSection(section: "Section 3", items: ["G", "H", "I"]),
-        AppleSection(section: "Section 4", items: ["J", "K", "L"])
+    struct Section<Key: Hashable, Value> {
+        let section: Key
+        let items: [Value]
+    }
+
+    static let source: [Section<String, String>] = [
+        Section(section: "Section 1", items: ["A", "B", "C"]),
+        Section(section: "Section 2", items: ["D", "E", "F"]),
+        Section(section: "Section 3", items: ["G", "H", "I"]),
+        Section(section: "Section 4", items: ["J", "K", "L"])
     ]
 
     static let sourceSnapShot: NSDiffableDataSourceSnapshot<String, String> = {
-        var snapshot = NSDiffableDataSourceSnapshot<String, String>()
-        snapshot.appendSections(Apple.source.map { $0.section })
-        Apple.source.forEach {
-            snapshot.appendItems($0.items, toSection: $0.section)
-        }
-        return snapshot
+        return convert(array: Apple.source)
     }()
 
-    static let target = [
-        AppleSection(section: "Section 5", items: ["M", "N", "O"]),
-        AppleSection(section: "Section 1", items: ["A", "C"]),
-        AppleSection(section: "Section 4", items: ["J", "I", "K", "L"]),
-        AppleSection(section: "Section 3", items: ["G", "H", "Z"]),
-        AppleSection(section: "Section 6", items: ["P", "Q", "R"])
+    static let target: [Section<String, String>] = [
+        Section(section: "Section 5", items: ["M", "N", "O"]),
+        Section(section: "Section 1", items: ["A", "C"]),
+        Section(section: "Section 4", items: ["J", "I", "K", "L"]),
+        Section(section: "Section 3", items: ["G", "H", "Z"]),
+        Section(section: "Section 6", items: ["P", "Q", "R"])
     ]
 
     static let targetSnapShot: NSDiffableDataSourceSnapshot<String, String> = {
-        var snapshot = NSDiffableDataSourceSnapshot<String, String>()
-        snapshot.appendSections(Apple.target.map { $0.section })
-        Apple.target.forEach {
+        return convert(array: Apple.target)
+    }()
+
+    private static func convert<Key: Hashable, Value>(array: [Section<Key, Value>]) -> NSDiffableDataSourceSnapshot<Key, Value> {
+        var snapshot = NSDiffableDataSourceSnapshot<Key, Value>()
+        snapshot.appendSections(array.map { $0.section })
+        array.forEach {
             snapshot.appendItems($0.items, toSection: $0.section)
         }
         return snapshot
-    }()
-}
-
-struct AppleSection {
-    let section: String
-    let items: [String]
+    }
 }

@@ -96,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */,
-				EF5A0E962410A40100026D09 /* SampleDataSource */,
 				EF5A0E912410A3A900026D09 /* ViewController */,
 				EF5A0E8E2410A22100026D09 /* Supporting Files */,
 			);
@@ -133,13 +132,6 @@
 				EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */,
 			);
 			path = DifferenceKit;
-			sourceTree = "<group>";
-		};
-		EF5A0E962410A40100026D09 /* SampleDataSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SampleDataSource;
 			sourceTree = "<group>";
 		};
 		EF5A0EA32410ABE700026D09 /* RxDataSources */ = {
