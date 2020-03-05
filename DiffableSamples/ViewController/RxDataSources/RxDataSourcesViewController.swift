@@ -11,13 +11,18 @@ final class RxDataSourcesViewController: T2ableViewController {
     override func viewDidLoad() {
         setupTableView()
         let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
+            animationConfiguration: .init(
+                insertAnimation: .fade,
+                reloadAnimation: .fade,
+                deleteAnimation: .fade
+            ),
             configureCell: { dataSource, tableView, indexPath, item in
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self), for: indexPath)
                 cell.textLabel?.text = item
                 return cell
             },
-            titleForHeaderInSection: { ds, index in
-                return ds.sectionModels[index].header
+            titleForHeaderInSection: { dataSource, index in
+                return dataSource.sectionModels[index].header
             }
         )
 
