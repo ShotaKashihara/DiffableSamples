@@ -123,7 +123,7 @@
 				EF5A0EA32410ABE700026D09 /* RxDataSources */,
 				EF5A0E942410A3D100026D09 /* IGListKit */,
 				EF5A0E952410A3D800026D09 /* DeepDiff */,
-				EF5A0EAA2410D0B700026D09 /* Apple way on iOS 13 */,
+				EF5A0EAA2410D0B700026D09 /* 🚧 Apple way on iOS 13 🚧 */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -166,14 +166,14 @@
 			path = RxDataSources;
 			sourceTree = "<group>";
 		};
-		EF5A0EAA2410D0B700026D09 /* Apple way on iOS 13 */ = {
+		EF5A0EAA2410D0B700026D09 /* 🚧 Apple way on iOS 13 🚧 */ = {
 			isa = PBXGroup;
 			children = (
 				EF5A0EAB2410D0E700026D09 /* ListViewController.swift */,
 				EF5A0EAD2410D0FF00026D09 /* ListCell.swift */,
 				EF5A0EAF2410D5BC00026D09 /* UITableViewDiffableDataSourceViewController.swift */,
 			);
-			path = "Apple way on iOS 13";
+			path = "🚧 Apple way on iOS 13 🚧";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
