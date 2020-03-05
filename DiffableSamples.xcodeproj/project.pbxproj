@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9294DE31998427AE6F9BD5E5 /* Pods_DiffarableSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B855B66C422FE4454C50A677 /* Pods_DiffarableSamples.framework */; };
+		22985D896BC72D1FC120F8D3 /* Pods_DiffableSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF33F5D8D634B75D5106C5A1 /* Pods_DiffableSamples.framework */; };
 		EF5A0E7B24109EAE00026D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */; };
 		EF5A0E8424109EB000026D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8324109EB000026D09 /* Assets.xcassets */; };
 		EF5A0E8724109EB000026D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */; };
@@ -22,10 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26CBA20E1B92EF2D7F657D5D /* Pods-DiffableSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffableSamples.release.xcconfig"; path = "Target Support Files/Pods-DiffableSamples/Pods-DiffableSamples.release.xcconfig"; sourceTree = "<group>"; };
+		2E12B0EAEF4C15A85A26CE91 /* Pods-DiffableSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffableSamples.debug.xcconfig"; path = "Target Support Files/Pods-DiffableSamples/Pods-DiffableSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		83571660E7B3193CAB510206 /* Pods-DiffarableSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffarableSamples.release.xcconfig"; path = "Target Support Files/Pods-DiffarableSamples/Pods-DiffarableSamples.release.xcconfig"; sourceTree = "<group>"; };
-		B855B66C422FE4454C50A677 /* Pods_DiffarableSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiffarableSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4451BD21054AA483AB993C /* Pods-DiffarableSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffarableSamples.debug.xcconfig"; path = "Target Support Files/Pods-DiffarableSamples/Pods-DiffarableSamples.debug.xcconfig"; sourceTree = "<group>"; };
-		EF5A0E7724109EAE00026D09 /* DiffarableSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffarableSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF33F5D8D634B75D5106C5A1 /* Pods_DiffableSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiffableSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5A0E7724109EAE00026D09 /* DiffableSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffableSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5A0E8324109EB000026D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5A0E8624109EB000026D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9294DE31998427AE6F9BD5E5 /* Pods_DiffarableSamples.framework in Frameworks */,
+				22985D896BC72D1FC120F8D3 /* Pods_DiffableSamples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +59,8 @@
 			children = (
 				BD4451BD21054AA483AB993C /* Pods-DiffarableSamples.debug.xcconfig */,
 				83571660E7B3193CAB510206 /* Pods-DiffarableSamples.release.xcconfig */,
+				2E12B0EAEF4C15A85A26CE91 /* Pods-DiffableSamples.debug.xcconfig */,
+				26CBA20E1B92EF2D7F657D5D /* Pods-DiffableSamples.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,7 +68,7 @@
 		D2D8A4127D11685C49B750C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B855B66C422FE4454C50A677 /* Pods_DiffarableSamples.framework */,
+				EF33F5D8D634B75D5106C5A1 /* Pods_DiffableSamples.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5A0EB42410E1F300026D09 /* README.md */,
-				EF5A0E7924109EAE00026D09 /* DiffarableSamples */,
+				EF5A0E7924109EAE00026D09 /* DiffableSamples */,
 				EF5A0E7824109EAE00026D09 /* Products */,
 				B965697185A78313DA5D2C09 /* Pods */,
 				D2D8A4127D11685C49B750C0 /* Frameworks */,
@@ -83,12 +87,12 @@
 		EF5A0E7824109EAE00026D09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF5A0E7724109EAE00026D09 /* DiffarableSamples.app */,
+				EF5A0E7724109EAE00026D09 /* DiffableSamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF5A0E7924109EAE00026D09 /* DiffarableSamples */ = {
+		EF5A0E7924109EAE00026D09 /* DiffableSamples */ = {
 			isa = PBXGroup;
 			children = (
 				EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */,
@@ -96,7 +100,7 @@
 				EF5A0E912410A3A900026D09 /* Sample */,
 				EF5A0E8E2410A22100026D09 /* Supporting Files */,
 			);
-			path = DiffarableSamples;
+			path = DiffableSamples;
 			sourceTree = "<group>";
 		};
 		EF5A0E8E2410A22100026D09 /* Supporting Files */ = {
@@ -157,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF5A0E7624109EAE00026D09 /* DiffarableSamples */ = {
+		EF5A0E7624109EAE00026D09 /* DiffableSamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF5A0E8B24109EB000026D09 /* Build configuration list for PBXNativeTarget "DiffarableSamples" */;
+			buildConfigurationList = EF5A0E8B24109EB000026D09 /* Build configuration list for PBXNativeTarget "DiffableSamples" */;
 			buildPhases = (
 				0CF93CD797CAB3652656B7ED /* [CP] Check Pods Manifest.lock */,
 				EF5A0E7324109EAE00026D09 /* Sources */,
@@ -171,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = DiffarableSamples;
+			name = DiffableSamples;
 			productName = DiffarableSamples;
-			productReference = EF5A0E7724109EAE00026D09 /* DiffarableSamples.app */;
+			productReference = EF5A0E7724109EAE00026D09 /* DiffableSamples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EF5A0E7224109EAD00026D09 /* Build configuration list for PBXProject "DiffarableSamples" */;
+			buildConfigurationList = EF5A0E7224109EAD00026D09 /* Build configuration list for PBXProject "DiffableSamples" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF5A0E7624109EAE00026D09 /* DiffarableSamples */,
+				EF5A0E7624109EAE00026D09 /* DiffableSamples */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +242,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DiffarableSamples-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DiffableSamples-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -251,15 +255,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DiffarableSamples/Pods-DiffarableSamples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DiffableSamples/Pods-DiffableSamples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DiffarableSamples/Pods-DiffarableSamples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DiffableSamples/Pods-DiffableSamples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiffarableSamples/Pods-DiffarableSamples-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiffableSamples/Pods-DiffableSamples-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,17 +414,17 @@
 		};
 		EF5A0E8C24109EB000026D09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD4451BD21054AA483AB993C /* Pods-DiffarableSamples.debug.xcconfig */;
+			baseConfigurationReference = 2E12B0EAEF4C15A85A26CE91 /* Pods-DiffableSamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BF4Z6Z9XH;
-				INFOPLIST_FILE = "DiffarableSamples/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "DiffableSamples/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.DiffarableSamples;
+				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.DiffableSamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,17 +433,17 @@
 		};
 		EF5A0E8D24109EB000026D09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83571660E7B3193CAB510206 /* Pods-DiffarableSamples.release.xcconfig */;
+			baseConfigurationReference = 26CBA20E1B92EF2D7F657D5D /* Pods-DiffableSamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BF4Z6Z9XH;
-				INFOPLIST_FILE = "DiffarableSamples/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "DiffableSamples/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.DiffarableSamples;
+				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.DiffableSamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF5A0E7224109EAD00026D09 /* Build configuration list for PBXProject "DiffarableSamples" */ = {
+		EF5A0E7224109EAD00026D09 /* Build configuration list for PBXProject "DiffableSamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF5A0E8924109EB000026D09 /* Debug */,
@@ -458,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF5A0E8B24109EB000026D09 /* Build configuration list for PBXNativeTarget "DiffarableSamples" */ = {
+		EF5A0E8B24109EB000026D09 /* Build configuration list for PBXNativeTarget "DiffableSamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF5A0E8C24109EB000026D09 /* Debug */,
