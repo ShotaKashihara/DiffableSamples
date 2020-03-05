@@ -1,12 +1,5 @@
 import UIKit
 
-private extension SampleViewController {
-    enum RowType: Int, CaseIterable {
-        case textStyle
-        case pageHeader
-    }
-}
-
 final class SampleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,25 +36,5 @@ final class SampleViewController: UITableViewController {
 
         let viewController = RowType(rawValue: indexPath.row)!.viewController
         navigationController?.pushViewController(viewController, animated: true)
-    }
-}
-
-extension SampleViewController.RowType {
-    var title: String {
-        switch self {
-        case .textStyle:
-            return "TextStyle"
-        case .pageHeader:
-            return "Page Header"
-        }
-    }
-
-    var viewController: UIViewController {
-        switch self {
-        case .textStyle:
-            return UIViewController()
-        case .pageHeader:
-            return UIViewController()
-        }
     }
 }

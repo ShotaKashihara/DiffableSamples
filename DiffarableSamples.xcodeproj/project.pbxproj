@@ -12,6 +12,8 @@
 		EF5A0E8424109EB000026D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8324109EB000026D09 /* Assets.xcassets */; };
 		EF5A0E8724109EB000026D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */; };
 		EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */; };
+		EF5A0E982410A42100026D09 /* DifferenceKitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */; };
+		EF5A0E9A2410A65700026D09 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E992410A65700026D09 /* Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EF5A0E8624109EB000026D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5A0E8824109EB000026D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceKitTableViewController.swift; sourceTree = "<group>"; };
+		EF5A0E992410A65700026D09 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +80,10 @@
 		EF5A0E7924109EAE00026D09 /* DiffarableSamples */ = {
 			isa = PBXGroup;
 			children = (
-				EF5A0E8E2410A22100026D09 /* Supporting Files */,
 				EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */,
-				EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */,
+				EF5A0E962410A40100026D09 /* SampleDataSource */,
+				EF5A0E912410A3A900026D09 /* Sample */,
+				EF5A0E8E2410A22100026D09 /* Supporting Files */,
 			);
 			path = DiffarableSamples;
 			sourceTree = "<group>";
@@ -86,11 +91,60 @@
 		EF5A0E8E2410A22100026D09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */,
 				EF5A0E8324109EB000026D09 /* Assets.xcassets */,
 				EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */,
 				EF5A0E8824109EB000026D09 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF5A0E912410A3A900026D09 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A0E992410A65700026D09 /* Sample.swift */,
+				EF5A0E922410A3B600026D09 /* DifferenceKit */,
+				EF5A0E932410A3C000026D09 /* RxDataSources */,
+				EF5A0E942410A3D100026D09 /* IGListKit */,
+				EF5A0E952410A3D800026D09 /* DeepDiff */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		EF5A0E922410A3B600026D09 /* DifferenceKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */,
+			);
+			path = DifferenceKit;
+			sourceTree = "<group>";
+		};
+		EF5A0E932410A3C000026D09 /* RxDataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RxDataSources;
+			sourceTree = "<group>";
+		};
+		EF5A0E942410A3D100026D09 /* IGListKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IGListKit;
+			sourceTree = "<group>";
+		};
+		EF5A0E952410A3D800026D09 /* DeepDiff */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeepDiff;
+			sourceTree = "<group>";
+		};
+		EF5A0E962410A40100026D09 /* SampleDataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SampleDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5A0E982410A42100026D09 /* DifferenceKitTableViewController.swift in Sources */,
+				EF5A0E9A2410A65700026D09 /* Sample.swift in Sources */,
 				EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */,
 				EF5A0E7B24109EAE00026D09 /* AppDelegate.swift in Sources */,
 			);
