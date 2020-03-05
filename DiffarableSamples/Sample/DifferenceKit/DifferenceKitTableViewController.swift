@@ -2,8 +2,7 @@ import DifferenceKit
 
 extension String: Differentiable {}
 
-final class DifferenceKitTableViewController: UITableViewController {
-
+fileprivate enum Const {
     static let source = [
         ArraySection(model: "Section 1", elements: ["A", "B", "C"]),
         ArraySection(model: "Section 2", elements: ["D", "E", "F"]),
@@ -18,9 +17,9 @@ final class DifferenceKitTableViewController: UITableViewController {
         ArraySection(model: "Section 3", elements: ["G", "H", "Z"]),
         ArraySection(model: "Section 6", elements: ["P", "Q", "R"])
     ]
+}
 
-    public var refreshAction: (() -> Void)?
-
+final class DifferenceKitTableViewController: TableViewController {
     public var dataInput: [ArraySection<String, String>] {
         get { return data }
         set {
@@ -30,25 +29,19 @@ final class DifferenceKitTableViewController: UITableViewController {
             }
         }
     }
-
     private var data = [ArraySection<String, String>]()
 
-    public init() {
-        super.init(style: .grouped)
-        tableView.sectionHeaderHeight = 30
-        tableView.sectionFooterHeight = 0
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
-    }
+    override func viewDidLoad() {
+        dataInput = Const.source
 
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] timer in
+            self?.dataInput = Const.target
+        }
     }
+}
 
-    @objc private func refresh() {
-        refreshAction?()
-    }
-
+/// UITableViewDataSource
+extension DifferenceKitTableViewController {
     public override func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
     }
@@ -65,12 +58,5 @@ final class DifferenceKitTableViewController: UITableViewController {
 
     public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return data[section].model
-    }
-    override func viewDidLoad() {
-        dataInput = DifferenceKitTableViewController.source
-
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] timer in
-            self?.dataInput = DifferenceKitTableViewController.target
-        }
     }
 }

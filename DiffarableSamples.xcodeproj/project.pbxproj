@@ -14,6 +14,7 @@
 		EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */; };
 		EF5A0E982410A42100026D09 /* DifferenceKitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */; };
 		EF5A0E9A2410A65700026D09 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E992410A65700026D09 /* Sample.swift */; };
+		EF5A0E9C2410AA1100026D09 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E9B2410AA1100026D09 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		EF5A0E972410A42100026D09 /* DifferenceKitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceKitTableViewController.swift; sourceTree = "<group>"; };
 		EF5A0E992410A65700026D09 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		EF5A0E9B2410AA1100026D09 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				EF5A0E8324109EB000026D09 /* Assets.xcassets */,
 				EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */,
 				EF5A0E8824109EB000026D09 /* Info.plist */,
+				EF5A0E9B2410AA1100026D09 /* TableViewController.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				EF5A0E982410A42100026D09 /* DifferenceKitTableViewController.swift in Sources */,
 				EF5A0E9A2410A65700026D09 /* Sample.swift in Sources */,
 				EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */,
+				EF5A0E9C2410AA1100026D09 /* TableViewController.swift in Sources */,
 				EF5A0E7B24109EAE00026D09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
