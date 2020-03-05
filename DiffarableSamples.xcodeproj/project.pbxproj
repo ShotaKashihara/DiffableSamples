@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9294DE31998427AE6F9BD5E5 /* Pods_DiffarableSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B855B66C422FE4454C50A677 /* Pods_DiffarableSamples.framework */; };
 		EF5A0E7B24109EAE00026D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */; };
-		EF5A0E7D24109EAE00026D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E7C24109EAE00026D09 /* SceneDelegate.swift */; };
-		EF5A0E7F24109EAE00026D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E7E24109EAE00026D09 /* ViewController.swift */; };
-		EF5A0E8224109EAE00026D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8024109EAE00026D09 /* Main.storyboard */; };
 		EF5A0E8424109EB000026D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8324109EB000026D09 /* Assets.xcassets */; };
 		EF5A0E8724109EB000026D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */; };
+		EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +20,10 @@
 		BD4451BD21054AA483AB993C /* Pods-DiffarableSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffarableSamples.debug.xcconfig"; path = "Target Support Files/Pods-DiffarableSamples/Pods-DiffarableSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		EF5A0E7724109EAE00026D09 /* DiffarableSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffarableSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF5A0E7C24109EAE00026D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF5A0E7E24109EAE00026D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF5A0E8124109EAE00026D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF5A0E8324109EB000026D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5A0E8624109EB000026D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5A0E8824109EB000026D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +44,6 @@
 				BD4451BD21054AA483AB993C /* Pods-DiffarableSamples.debug.xcconfig */,
 				83571660E7B3193CAB510206 /* Pods-DiffarableSamples.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +76,21 @@
 		EF5A0E7924109EAE00026D09 /* DiffarableSamples */ = {
 			isa = PBXGroup;
 			children = (
+				EF5A0E8E2410A22100026D09 /* Supporting Files */,
 				EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */,
-				EF5A0E7C24109EAE00026D09 /* SceneDelegate.swift */,
-				EF5A0E7E24109EAE00026D09 /* ViewController.swift */,
-				EF5A0E8024109EAE00026D09 /* Main.storyboard */,
+				EF5A0E8F2410A24F00026D09 /* SampleViewController.swift */,
+			);
+			path = DiffarableSamples;
+			sourceTree = "<group>";
+		};
+		EF5A0E8E2410A22100026D09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				EF5A0E8324109EB000026D09 /* Assets.xcassets */,
 				EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */,
 				EF5A0E8824109EB000026D09 /* Info.plist */,
 			);
-			path = DiffarableSamples;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +155,6 @@
 			files = (
 				EF5A0E8724109EB000026D09 /* LaunchScreen.storyboard in Resources */,
 				EF5A0E8424109EB000026D09 /* Assets.xcassets in Resources */,
-				EF5A0E8224109EAE00026D09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF5A0E7F24109EAE00026D09 /* ViewController.swift in Sources */,
+				EF5A0E902410A24F00026D09 /* SampleViewController.swift in Sources */,
 				EF5A0E7B24109EAE00026D09 /* AppDelegate.swift in Sources */,
-				EF5A0E7D24109EAE00026D09 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF5A0E8024109EAE00026D09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF5A0E8124109EAE00026D09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF5A0E8524109EB000026D09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,12 +347,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BF4Z6Z9XH;
-				INFOPLIST_FILE = DiffarableSamples/Info.plist;
+				INFOPLIST_FILE = "DiffarableSamples/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wantedly.DiffarableSamples;
+				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.DiffarableSamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,12 +366,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BF4Z6Z9XH;
-				INFOPLIST_FILE = DiffarableSamples/Info.plist;
+				INFOPLIST_FILE = "DiffarableSamples/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wantedly.DiffarableSamples;
+				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.DiffarableSamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
