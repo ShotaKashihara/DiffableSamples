@@ -1,11 +1,3 @@
-//
-//  UITableViewDiffableDataSourceViewController.swift
-//  DiffarableSamples
-//
-//  Created by wantedly on 2020/03/05.
-//  Copyright © 2020 com.wantedly. All rights reserved.
-//
-
 import UIKit
 
 final class UITableViewDiffableDataSourceViewController: T2ableViewController {

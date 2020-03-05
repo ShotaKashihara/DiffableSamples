@@ -13,7 +13,7 @@ extension SampleViewController {
             case .rxDataSources:
                 return "RxSwiftCommunity/RxDataSources"
             case .apple:
-                return "🚧 Apple/Diffable Data Sources (~> iOS 13) 🚧"
+                return "🚧 UITableViewDiffableDataSource on iOS 13 🚧"
             }
         }
 

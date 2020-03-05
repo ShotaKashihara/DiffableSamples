@@ -9,6 +9,4 @@ target 'DiffarableSamples' do
   # Pods for DiffarableSamples
   pod 'DifferenceKit'
   pod 'RxDataSources', '~> 4.0'
-  pod 'IGListKit', '~> 4.0.0'
-  pod 'DeepDiff'
 end
