@@ -97,7 +97,7 @@
 			children = (
 				EF5A0E7A24109EAE00026D09 /* AppDelegate.swift */,
 				EF5A0E962410A40100026D09 /* SampleDataSource */,
-				EF5A0E912410A3A900026D09 /* Sample */,
+				EF5A0E912410A3A900026D09 /* ViewController */,
 				EF5A0E8E2410A22100026D09 /* Supporting Files */,
 			);
 			path = DiffableSamples;
@@ -115,7 +115,7 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EF5A0E912410A3A900026D09 /* Sample */ = {
+		EF5A0E912410A3A900026D09 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				EF5A0E992410A65700026D09 /* Sample.swift */,
@@ -124,7 +124,7 @@
 				EF5A0EA32410ABE700026D09 /* RxDataSources */,
 				EF5A0EAA2410D0B700026D09 /* 🚧 UITableViewDiffableDataSource on iOS 13 🚧 */,
 			);
-			path = Sample;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		EF5A0E922410A3B600026D09 /* DifferenceKit */ = {
