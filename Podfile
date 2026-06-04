@@ -9,5 +9,5 @@ target 'DiffableSamples' do
 
   # Pods for DiffarableSamples
   pod 'DifferenceKit'
-  pod 'RxDataSources', '~> 4.0'
+  pod 'RxDataSources', '~> 5.0'
 end
